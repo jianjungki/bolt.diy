@@ -46,4 +46,4 @@ jobs:
           tags: jianjungki/bolt.diy:latest
           
       - name: Check manifest
-        run: docker buildx imagetools inspect ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}
+        run: docker buildx imagetools inspect jianjungki/bolt.diy:latest
